@@ -2,7 +2,7 @@ from pages.calculator_page import CalculatorPage
 
 
 def test_calc(chrome_driver):
-    calculator = CalculatorPage(chrome_driver, 5)
+    calculator = CalculatorPage(chrome_driver, 45)
     calculator.open_calculator_page()
     calculator.enter_delay()
     calculator.perform_calculations()
