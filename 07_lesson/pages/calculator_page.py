@@ -39,3 +39,5 @@ class CalculatorPage:
         self.wait.until(EC.text_to_be_present_in_element(
             self.RESULT_FIELD, '15')
         )
+        self.res = self.driver.find_element(*self.RESULT_FIELD).text
+        return self.res
